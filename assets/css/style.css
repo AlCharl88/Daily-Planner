@@ -1,13 +1,18 @@
- * {
-   margin: 0px;
-   padding: 0px;
- }
+.container-fluid {
+  margin-bottom: 100px;
+}
+
+footer {
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 20px;
+}
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
-  background-color: #D4CDF4;
+  background-color: lightblue;
 }
 
 textarea {
@@ -15,28 +20,20 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  background-color:cyan
-  border: 1px solid black;
+  border-left: 1px solid black;
   padding: 10px;
 }
 
 .jumbotron {
   text-align: center;
+  background-color: lightgoldenrodyellow;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
-  background-size: cover;
-  background-position: center;
 }
 
-footer {
-  padding-top: 50 px;
-  text-align: center;
-}
 .description {
   white-space: pre-wrap;
-  background-color:beige;
-
 }
 
 .time-block {
@@ -83,3 +80,26 @@ footer {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
+
+/* /* ** MEDIA QUERY FOR TABLETS AND SMALLER  ** */
+@media screen and (max-width: 768px), screen and (max-width: 575px) {
+  .row {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .hour {
+    padding-right: 17%;
+  }
+
+  .saveBtn {
+    border: 0;
+    border-radius: 0.25rem;
+    height: 50px;
+  }
+
+  textarea {
+    min-height: 85px;
+    border: 0;
+  }
+} 
